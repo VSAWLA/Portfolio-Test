@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <link href="css/normalize.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/slick.css">
+    <link href="css/slick.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <title>PORTFOLIO</title>
 </head>
-<body bgcolor="#232323">
+<body bgcolor="#16FFBD">
     <!-- start header -->
     <header class="header">
         <div class="container">
@@ -16,13 +16,14 @@
                     <name>Валерия | Веб-разработчик</name>
                 </div>
                 <!-- /name -->
-                <nav class="header__link">
-                    <a href="#" class="nav__link">Факты</a>
-                    <a href="#" class="nav__link">Позиция</a>
-                    <a href="#" class="nav__link">Фото</a>
-                    <a href="#" class="nav__link">Цитата</a>
-                    <a href="#" class="nav__link">Рекомендация</a>
-                </nav>
+                <div class="header__btn">
+                    <div class="header__image__link content-hidden" id="top-content">
+                        <a href="https://vk.com/mmupdereddreamerr" ><img src="img/vk.png" id="img__2"></a>
+                        <a href="https://t.me/vsawla04" ><img src="img/telegram.png" id="img__3"></a>
+                        <a href="https://instagram.com/vsawla?igshid=YmMyMTA2M2Y=" ><img src="img/inst.png" id="img__4"></a>
+                    </div>
+                    <button class="top-btn" id="header-btn" type="button"></button>
+                </div>
             </div>
             <!-- /header__wrapper -->
         </div>
@@ -45,10 +46,20 @@
                         возможности продвижения и росту
                         карьеры.<br>
                         Данный сайт был создан лишь с идеей самовыражения, как написано выше.</p>
+                        <p class="p-hidden">Я максимально разносторонний человек, мне постоянно нравится что-то
+                            новое, соответственно, я не стою на месте. Я имею довольно много
+                            увлечений, но здесь мы поговорим не об этом. Сайт направлен по большей
+                            степени на саморекламу с приведёнными аргументами. Изучив данный
+                            сайт, вы узнаете почему я рекомендую себя и что я из себя представляю.
+                            Кратко: я считаю, что в этой жизни нужно делать всё, что способствует твоему
+                            благополучию. Не отказывай себе в
+                            возможности продвижения и росту
+                            карьеры.<br>
+                            Данный сайт был создан лишь с идеей самовыражения, как написано выше.</p>
                 </div>
-                <div id="person">
-                        <img src="img/mainPhoto.png">
-                </div>
+                <figure id="person">
+                        <img id="person-img" src="img/mainPhoto.png">
+                </figure>
                 <hr class="hr">
             </div>
             <!-- /intro__wrapper -->
@@ -57,13 +68,14 @@
         <!-- /container -->
     </div>
     <!-- /intro -->
+    <hr class="hidden">
     <div class="facts">
         <div class="container">
             <div class="facts_wrapper">
                 <div class="mainpart">
-                    <h2>
-                        Забавные факты обо мне
-                    </h2>
+                    <span class="mainpart">
+                    Забавные<br>факты<br>обо мне
+                    </span>
                 </div>
                 <!-- /mainpart -->
                 <div class="content">
@@ -130,13 +142,14 @@
         <!-- /container -->
     </div>
     <!-- /facts -->
+    <hr class="hr-hidden-visual">
     <div class="position">
         <div class="container">
-            <div class="header_position">
+            <!-- <div class="header_position">
                 <div class="position__title">
-                    <h6>Моя позиция</h6>
+                    <span>Моя позиция</span>
                 </div>
-            </div>
+            </div> -->
                 <div class="position__wrapper">
                     <div class="position__text">
                         <p class="motivation">
@@ -153,7 +166,7 @@
                         </p>
                     </div>
                     <div class="position__photo">
-                        <img src="img/position__photo.png">
+                        <img id="position-img" src="img/position__photo.png">
                     </div>
                 </div>
                 <!-- /position__wrapper -->
@@ -170,9 +183,9 @@
             </div>
             <div class="visual__wrapper">
                 <div class="visual__photos">
-                    <img class="photo__slider__1" src="img/photo__1.jpg">
-                    <img src="img/photo__2.jpg">
-                    <img src="img/photo__3.jpg">
+                    <img id="slider-img-1" src="img/photo__2.jpg">
+                    <img id="slider-img-2" src="img/photo__3.jpg">
+                    <img id="slider-img-3" src="img/photo__1.jpg">
                 </div>
             </div>
         </div>
@@ -183,7 +196,7 @@
         <div class="container">
                 <div class="quote__wrapper">
                     <div class="quote__photo">
-                        <img src="img/flower.png">
+                        <img id="flower" src="img/flower.png">
                     </div>
                     <div class="quote__block__text">
                         <p class="quote__header">
@@ -214,9 +227,11 @@
             <div id="header__background">
                 <img src="img/background.png" width="100%">
             </div>
+            <div class="container">
             <p class="recommend">
                 Почему я рекомендую себя?
             </p>
+            </div>
         </div>
     </div>
     <div class="last__intro">
@@ -231,7 +246,7 @@
                         </p>
                 </div>
                 <div class="block__title__2">
-                    <p class="last__title__2">Ориентированность</p>
+                    <p class="last__title__2">Ориентир</p>
                         <p class="last__intro__subtitle__2">
                             Не существует “плохих” и “хороших” клиентов, 
                             смогу найти подход к любому человеку, понять 
@@ -239,7 +254,7 @@
                         </p>
                 </div>
                 <div class="block__title__3">
-                    <p class="last__title__3">Обратная связь</p>
+                    <p class="last__title__3">Cвязь</p>
                         <p class="last__intro__subtitle__3">
                             Беспрерывные поправки
                             до удовлетворяющего результата. 
@@ -259,14 +274,14 @@
                     <p class="footer__name__1">Валерия</p>
                     <p class="footer__name__2">Веб-Разработчик</p>
                 </div>
-                    <div class="footer__btn">
+                    <!-- <div class="footer__btn">
                         <div class="footer__image__link content-hidden" id="bottom-content">
                             <a href="https://vk.com/mmupdereddreamerr" ><img src="img/vk.png" id="img__2"></a>
                             <a href="https://t.me/vsawla04" ><img src="img/telegram.png" id="img__3"></a>
                             <a href="https://instagram.com/vsawla?igshid=YmMyMTA2M2Y=" ><img src="img/inst.png" id="img__4"></a>
                         </div>
                         <button class="bottom-btn" id="footer__btn" type="button"></button>
-                    </div>
+                    </div> -->
             </div>
         </div>
     </div>
